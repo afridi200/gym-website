@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+*{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #00000080;
+    padding-inline:10rem;
+}
+.home-page-heading{
+    display:flex;
+}
+header h1{
+    font-family: Oswald;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 71. 14px;
+    text-transform: uppercase;
+    color:#FFFFFF;
+
+}
+header h1:nth-child(2){
+    color:darkred;
+}
+
+nav ul{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:1rem;
+    text-transform: uppercase;
+    font-family:Oswald;
+    font-family: Oswald;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26.68px;
+    color:#FFFFFF;
+    margin-left: 3rem;
+}
+nav li:nth-child(1){
+    color:darkred;
+}
+header nav{
+    display:flex;
+    gap:9rem;
+}
+
+nav button{
+    display:flex;
+    font-family: Oswald;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26.68px;
+    text-transform: uppercase;
+    color:#FFFFFF;
+    background:darkred;
+    padding:0.5rem;
+    padding-inline:1rem;
+    cursor:pointer;
+    
+}
+#home-page{
+    background: url(../assets/img/background.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    }
+    
+.home-page-text{
+    padding:10rem;
+}
+.home-page-text p{
+    font-family: Oswald;
+font-size: 30px;
+font-weight: 500;
+line-height: 44.46px;
+color:#FFFFFF;
+text-transform: uppercase;
+}
+.home-page-text h1{
+    font-family: Oswald;
+font-size: 96px;
+font-weight: 700;
+line-height: 142.27px;
+color:#FFFFFF;
+text-transform:uppercase;
+}
+.home-page-text h1:nth-child(3){
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    /* border: 1px solid black; */
+}
+.home-page-text button{
+    font-family: Roboto Condensed;
+font-size: 32px;
+font-weight: 700;
+line-height: 37.5px;
+color:#FFFFFF;
+background:transparent;
+text-transform:uppercase;
+padding-inline:1rem;
+padding-block: 0.5rem;
+cursor:pointer;
+}
+#home-page-bottom{
+    background: #141010;
+    
+
+}
+.home-page-img{
+    
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+gap: 2rem;
+background-color: black;
+padding: 5.5rem 11rem;
+}
+.home-page-img div{
+    padding: 3rem;
+    background-color: white;
+}
+
+.home-page-img div img{
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 212/156;
+}
