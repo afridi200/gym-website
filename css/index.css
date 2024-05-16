@@ -1,132 +1,634 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-*{
-    padding:0;
-    margin:0;
-    list-style: none;
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
-header{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #00000080;
-    padding-inline:10rem;
+/* html{
+    font-size:62.5%;
+} */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #00000080;
+  padding-inline: 10rem;
 }
-.home-page-heading{
-    display:flex;
+.home-page-heading {
+  display: flex;
 }
-header h1{
-    font-family: Oswald;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 71. 14px;
-    text-transform: uppercase;
-    color:#FFFFFF;
-
+header h1 {
+  font-family: Oswald;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 71 14px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
-header h1:nth-child(2){
-    color:darkred;
-}
-
-nav ul{
-    display:flex;
-    align-items:center;
-    justify-content: center;
-    gap:1rem;
-    text-transform: uppercase;
-    font-family:Oswald;
-    font-family: Oswald;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26.68px;
-    color:#FFFFFF;
-    margin-left: 3rem;
-}
-nav li:nth-child(1){
-    color:darkred;
-}
-header nav{
-    display:flex;
-    gap:9rem;
+header h1:nth-child(2) {
+  color: #ef0202;
 }
 
-nav button{
-    display:flex;
-    font-family: Oswald;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 26.68px;
-    text-transform: uppercase;
-    color:#FFFFFF;
-    background:darkred;
-    padding:0.5rem;
-    padding-inline:1rem;
-    cursor:pointer;
-    
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  font-family: Oswald;
+  font-family: Oswald;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26.68px;
+  color: #ffffff;
+  margin-left: 3rem;
 }
-#home-page{
-    background: url(../assets/img/background.png);
-    background-repeat: no-repeat;
-    background-position:center;
-    background-size: cover;
-    }
-    
-.home-page-text{
-    padding:10rem;
+nav li:nth-child(1) {
+  color: #ef0202;
 }
-.home-page-text p{
-    font-family: Oswald;
-font-size: 30px;
-font-weight: 500;
-line-height: 44.46px;
-color:#FFFFFF;
-text-transform: uppercase;
-}
-.home-page-text h1{
-    font-family: Oswald;
-font-size: 96px;
-font-weight: 700;
-line-height: 142.27px;
-color:#FFFFFF;
-text-transform:uppercase;
-}
-.home-page-text h1:nth-child(3){
-    color: transparent;
-    -webkit-text-stroke: 2px white;
-    /* border: 1px solid black; */
-}
-.home-page-text button{
-    font-family: Roboto Condensed;
-font-size: 32px;
-font-weight: 700;
-line-height: 37.5px;
-color:#FFFFFF;
-background:transparent;
-text-transform:uppercase;
-padding-inline:1rem;
-padding-block: 0.5rem;
-cursor:pointer;
-}
-#home-page-bottom{
-    background: #141010;
-    
-
-}
-.home-page-img{
-    
-display: grid;
-grid-template-columns: repeat(5, 1fr);
-gap: 2rem;
-background-color: black;
-padding: 5.5rem 11rem;
-}
-.home-page-img div{
-    padding: 3rem;
-    background-color: white;
+header nav {
+  display: flex;
+  gap: 9rem;
 }
 
-.home-page-img div img{
+nav button {
+  display: flex;
+  font-family: Oswald;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26.68px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #ef0202;
+  padding: 0.5rem;
+  padding-inline: 1rem;
+  cursor: pointer;
+}
+#home-page {
+  background: url(../assets/img/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.home-page-text {
+  padding: 10rem;
+}
+.home-page-text p {
+  font-family: Oswald;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 44.46px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.home-page-text h1 {
+  font-family: Oswald;
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 142.27px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.home-page-text h1:nth-child(3) {
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  /* border: 1px solid black; */
+}
+.home-page-text button {
+  font-family: Roboto Condensed;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 37.5px;
+  color: #ffffff;
+  border: 1px solid#FFFFFF;
+  background: transparent;
+  text-transform: uppercase;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  cursor: pointer;
+  width: 184px;
+  height: 59px;
+}
+#home-page-bottom {
+  background: #141010;
+}
+.home-page-img {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  background-color: black;
+  padding: 5.5rem 11rem;
+}
+.home-page-img div {
+  padding: 3rem;
+  background-color: white;
+}
+
+.home-page-img div img {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 212/156;
+}
+
+.training {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+  background: #000000;
+  text-align: center;
+  padding-inline: 10rem;
+  padding-block: 5rem;
+}
+
+.personal-training {
+  background: url(../assets/img/personal\ training.png);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+.group-training {
+  background: url(../assets/img/group\ training.png);
+  background-repeat: no-repeat;
+  /* background-position:center; */
+  background-size: cover;
+  padding: 2rem;
+  display: grid;
+  /* align-items: center;
+    justify-content: center; */
+  gap: 1rem;
+}
+
+.training h1 {
+  font-family: Oswald;
+  font-size: 41px;
+  font-weight: 600;
+  line-height: 60.76px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.training p {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26.72px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.training button {
+  font-family: Roboto Condensed;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30.06px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  /* text-align: center; */
+  text-transform: uppercase;
+  /* margin-top:2rem; */
+  background: transparent;
+  padding-inline: 1.7rem;
+  padding-block: 0.5rem;
+  cursor: pointer;
+  border: 2px solid#FFFFFF;
+  width: 184px;
+  height: 59px;
+  display: block;
+  margin: auto;
+
+  /* margin-bottom:3rem; */
+}
+.group-training button {
+  background: #ef0202;
+}
+#what-we-offer {
+  background: #3b3b3b;
+  display: grid;
+  gap: 5rem;
+  padding-block: 4rem;
+  padding-inline: 11rem;
+}
+.offering-heading {
+  font-family: Oswald;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 74.1px;
+  text-align: center;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(191, 183, 183);
+}
+.offering-card {
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+.offer-card {
+  display: grid;
+  gap: 1rem;
+}
+
+.offer-card img {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 390 / 416;
+}
+.offer-card h1 {
+  font-family: Oswald;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 44.46px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.offer-card p {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26.72px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.about-me {
+  display: flex;
+  gap: 5rem;
+  background: #000000;
+  padding-block: 5rem;
+  padding-inline: 11rem;
+  align-items: center;
+  justify-content: center;
+}
+.about-me-text {
+  display: grid;
+  gap: 2rem;
+}
+.about-me-text h1 {
+  font-family: Oswald;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 74.1px;
+  align-items: center;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  text-transform: uppercase;
+}
+.about-me-text p {
+  font-family: Roboto Condensed;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.about-me-text button {
+  font-family: Roboto Condensed;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30.06px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: transparent;
+  border: 1px solid white;
+  width: 184px;
+  height: 59px;
+  /* display:block;
+margin:auto; */
+  cursor: pointer;
+}
+
+
+.about-me-img img{
     max-width: 100%;
     height: auto;
-    aspect-ratio: 212/156;
+  }
+
+.pricing {
+  background: #000000;
+  padding: 5rem 11rem;
+  display: grid;
+  gap: 5rem;
+}
+.pricing-heading {
+  font-family: Oswald;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 74.1px;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  text-transform: uppercase;
+}
+.pricing-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  /* text-align:center; */
+}
+
+.pricing-body {
+  padding: 2.5rem 5rem;
+  border: 1px solid white;
+  display: grid;
+  align-items: center;
+  gap: 0.7rem;
+  text-align: center;
+  justify-content: center;
+}
+.pricing-body img {
+  display: block;
+  margin: auto;
+}
+.pricing-body h1 {
+  font-family: Roboto Condensed;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35.16px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.pricing-body h2 {
+  font-family: Roboto Condensed;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35.16px;
+  color: #ffffff;
+  text-trnasform: uppercase;
+}
+.pricing-body p {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  color: #ffffff;
+}
+.pricing-body button {
+  font-family: Roboto Condensed;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21.09px;
+  color: #ffffff;
+  background: #656565;
+  text-transform: uppercase;
+  display: block;
+  margin: auto;
+  width: 186px;
+  height: 39px;
+  cursor: pointer;
+}
+.pricing-body-button {
+  margin-top: 2rem;
+}
+
+.pricing-body:hover {
+  background-color: white;
+}
+
+.pricing-body:hover h1 {
+  color: black;
+}
+.pricing-body:hover h2 {
+  color: black;
+}
+.pricing-body:hover p {
+  color: black;
+}
+.pricing-body:hover button {
+  background: #ef0202;
+}
+#our-blog {
+  background: #3c3c3c;
+  display: grid;
+  gap: 2rem;
+  padding: 5rem 11rem;
+}
+.blog-heading h1 {
+  font-family: Oswald;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 74.1px;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  text-transform: uppercase;
+}
+.blog-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.blog-body-card P {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18.75px;
+  padding-left: 3rem;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-top: 0.5rem;
+}
+.blog-body-card h3 {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-transform: uppercase;
+  padding-left: 3rem;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+#form {
+  background: #000000;
+}
+.form {
+  padding: 5rem 11rem;
+  display: grid;
+  gap: 2rem;
+}
+.contact-form-heading h1 {
+  font-family: Oswald;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 74.1px;
+  text-align: center;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+.contact-form-body {
+  display: flex;
+  /* align-items:center; */
+  justify-content: center;
+}
+.contact-form-body h2 {
+  font-family: Roboto Condensed;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 35.16px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.contact-form {
+  background: #d9d9d936;
+  padding: 1rem 0.5rem 1rem 3rem;
+  display: grid;
+  gap: 20rem;
+}
+.contact-form input {
+  width: 100%;
+  height: 4rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid white;
+  margin-top: 1.5rem;
+}
+.contact-form .form-name-number {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* .contact-form{
+    background: #D9D9D936;
+    border: 1px solid red;
+    padding: 2rem 3rem;
+    display: grid;
+    gap: 15px;
+}
+
+.contact-form input{
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+} */
+.contact-form button {
+  font-family: Roboto Condensed;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.09px;
+  color: #ffffff;
+  background: #ef0202;
+  /* width: 199px;
+height:50px; */
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 4rem;
+  padding: 0.5rem 3rem;
+}
+.footer-page {
+  display: flex;
+  gap: 15rem;
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding: 5rem 11rem;
+  /* text-align:center; */
+}
+/* .footer-part{
+    border:1px solid red;
+} */
+
+.gym-name {
+  display: flex;
+}
+.footer-part h1 {
+  font-family: Oswald;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 71.14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.footer-part h1:nth-child(2) {
+  color: #ef0202;
+}
+.footer-part h2 {
+  font-family: Roboto Condensed;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 54px;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 207px;
+  height: auto;
+}
+.footer-part p {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: #ffffff;
+  margin-top: 2rem;
+  width: 290px;
+  height: auto;
+}
+.footer-part ul {
+  margin-top: 1.5rem;
+}
+.footer-part li {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: #ffffff;
+  text-transfrom: capitalize;
+  margin-top: 0.5rem;
+}
+.footer-part h3 {
+  font-family: Roboto Condensed;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 54px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media (width<768px) {
+  .home-page-text {
+    font-size: 3rem;
+  }
+
+  .training {
+    flex-direction: column;
+    gap: 4rem;
+    padding-inline: 1rem;
+    padding-block: 5rem;
+  }
+
+  .offering-card {
+    flex-direction: column;
+  }
+
+  #what-we-offer {
+    gap: 3rem;
+    padding-block: 4rem;
+    padding-inline: 1rem;
+  }
+  .offer-card img {
+    display: block;
+    margin: auto;
+  }
+
+  .about-me {
+    flex-direction: column;
+    padding-inline: 1rem;
+  }
+
+  
 }
