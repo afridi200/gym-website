@@ -1,0 +1,455 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+}
+.about-me-page {
+  background: url(../assets/img/about\ me\ background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+header {
+  background: #00000080;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 10rem;
+}
+.gym-name {
+  display: flex;
+}
+
+.gym-name h1 {
+  font-family: Oswald;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 7.114rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.gym-name h1:nth-child(2) {
+  color: #ef0202;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+  /* align-items:center;
+    jusfify-content:center; */
+}
+nav ul li {
+  font-family: Oswald;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.668rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+nav ul li:nth-child(2) {
+  color: #ef0202;
+}
+header button {
+  font-family: Oswald;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.668rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #ef0202;
+  padding: 0.5rem 2rem;
+}
+.about-me-heading {
+  font-family: Oswald;
+  font-size: 6.5rem;
+  font-weight: 700;
+  line-height: 14.227rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 10rem;
+}
+.about-me-body {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 7rem;
+  justify-content: center;
+  background: #000000;
+  padding: 10rem 10rem 5rem 10rem;
+}
+.about-me-body-text h1 {
+  font-family: Oswald;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 7.41rem;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  text-transform: uppercase;
+}
+.about-me-body-text p {
+  font-family: Roboto Condensed;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 3.006rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 4rem;
+}
+.about-me-body-text p:nth-child(3) {
+  margin-top: 1.5rem;
+}
+.about-me-body-text button {
+  font-family: Roboto Condensed;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 3.006rem;
+  padding: 1rem 2rem;
+  background: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 4rem;
+  cursor: pointer;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.offer-card {
+  background: #3b3b3b;
+  padding: 7rem 10rem;
+}
+.offer-card-heading h1 {
+  font-family: Oswald;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 7.41rem;
+  color: transparent;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px white;
+  text-align: center;
+}
+.offer-card-body {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.offer-card-div {
+  text-align: center;
+}
+.offer-card-div h1 {
+  font-family: Oswald;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4.446rem;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
+.offer-card-div p {
+  /* max-width: 100%; */
+  font-family: Roboto Condensed;
+  font-size: 1.6rem;
+  text-wrap: wrap;
+  font-weight: 500;
+  line-height: 2.672rem;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 0.7rem;
+  /* border: 2px solid green; */
+}
+.contact-form {
+  background: #000000;
+  display: grid;
+  gap: 4rem;
+  justify-content: center;
+  padding: 5rem 10rem;
+}
+.contact-heading h1 {
+  font-family: Oswald;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 7.41rem;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  text-transform: uppercase;
+  text-align: center;
+}
+.contact-form-body {
+  display: flex;
+  /* margin-top:4rem;
+  align-items: center; */
+  /* justify-content: center; */
+}
+.contact-form-box {
+  background: #d9d9d936;
+  padding: 1rem 5rem 1rem 3rem;
+}
+.contact-form-box h1 {
+  font-family: Roboto Condensed;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3.516rem;
+  color: white;
+  text-transform: uppercase;
+}
+.contact-form-box label {
+  font-family: Roboto Condensed;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.109rem;
+  color: #ffffff;
+  margin-top: 2rem;
+  display: block;
+  margin-top: 4rem;
+}
+.contact-form-box input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  padding: 1rem;
+}
+.contact-form-name-number-box {
+  display: flex;
+  gap: 10rem;
+}
+.contact-form-box button {
+  font-family: Roboto Condensed;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.109rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 199px;
+  height: 50px;
+  background: #ef0202;
+  margin-top: 5rem;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+}
+.footer-page {
+  display: flex;
+  gap: 20rem;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+  background: #000000;
+  padding: 7rem 10rem;
+  /* text-align:center; */
+}
+.footer-page-div .gym-name-text {
+  font-family: Roboto Condensed;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.88rem;
+  color: #ffffff;
+  text-transform: capitalize;
+  /* width: 290px;
+  height: 128px; */
+}
+.footer-page-div h2 {
+  font-family: Roboto Condensed;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 5.4rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.useful-links-heading {
+  display: flex;
+  gap: 1rem;
+}
+.footer-page-div h3 {
+  font-family: Roboto Condensed;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 5.4rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.footer-page-div .useful-links-part {
+  font-family: Roboto Condensed;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.88rem;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.footer-page-div .support-part {
+  font-family: Roboto Condensed;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.88rem;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.conatact-form-map iframe {
+  width: 100%;
+  height: 450px;
+}
+
+@media (768px<=width<=1024px) {
+  .about-me-body {
+    padding: 5rem 3rem;
+    align-items: center;
+    gap: 2rem;
+  }
+  .about-me-body-text p {
+    font-size: 1.5rem;
+    line-height: normal;
+    font-weight: 400;
+    margin-top: 2rem;
+  }
+  .about-me-body button {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    line-height: normal;
+  }
+  .about-me-body-text h1 {
+    font-size: 4rem;
+    line-height: normal;
+  }
+  .offer-card {
+    padding: 4rem 3rem;
+  }
+  .offer-card-body {
+    margin-top: 1.5rem;
+  }
+  .offer-card-div h1 {
+    margin-top: 0.1rem;
+    font-size: 2.2rem;
+    line-height: normal;
+  }
+  .offer-card-div p {
+    font-size: 1.2rem;
+    line-height: normal;
+    margin-top: -1;
+  }
+  .offer-card-heading h1 {
+    font-size: 4rem;
+  }
+  .contact-form {
+    padding: 4rem 3rem;
+  }
+  .contact-heading h1 {
+    font-size: 4rem;
+    line-height: normal;
+  }
+  .contact-form {
+    gap: 2rem;
+  }
+  .contact-form-box h1 {
+    font-size: 2.5rem;
+    font-weight: 450;
+  }
+  .contact-form-box label {
+    font-size: 1.5rem;
+    line-height: normal;
+  }
+  .contact-form-box input {
+    padding: 0.5rem;
+  }
+  .contact-form-box button {
+    font-size: 1.5rem;
+    width: 175px;
+    margin-top: 6rem;
+  }
+  .contact-form-box {
+    padding: 1rem 5rem 1rem 2rem;
+  }
+  .footer-page {
+    gap: 13rem;
+    padding: 4rem 3rem;
+  }
+  .gym-name h1 {
+    font-size: 4rem;
+    line-height: normal;
+  }
+  .footer-page-div h2 {
+    font-size: 2.3rem;
+    line-height:4.7rem
+  }
+  .footer-page-div h3{
+    font-size:2.3rem;
+    line-height:4.7rem;
+  }
+  .footer-page-div .useful-links-part{
+    font-size:1.4rem;
+    line-height:2.5rem;
+
+  }
+  .footer-page-div .support-part{
+    font-size:1.4rem;
+    line-height:2.5rem;
+  }
+}
+
+@media (width<768px) {
+  .about-me-body {
+    padding: 3rem 1rem;
+    grid-template-columns: 100%;
+  }
+  .offer-card {
+    padding: 3rem 1rem;
+  }
+  .offer-card-heading h1 {
+    font-size: 4rem;
+  }
+  .offer-card-body {
+    margin-top: 1.7rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .offer-card-div h1 {
+    margin-top: 0.3rem;
+  }
+  .offer-card-div P {
+    margin-top: 0.1rem;
+  }
+  .contact-heading h1 {
+    font-size: 4rem;
+  }
+  .contact-form {
+    gap: 3rem;
+  }
+  .contact-form-body {
+    flex-direction: column;
+  }
+  .contact-form {
+    padding: 3rem 1rem;
+  }
+  .contact-form-box button {
+    display: block;
+    margin: auto;
+    margin-top: 4rem;
+  }
+  .footer-page {
+    padding: 1rem 1rem;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+  }
+  .gym-name {
+    justify-content: center;
+  }
+  .footer-page-div {
+    display: grid;
+    gap: 1rem;
+  }
+  .useful-links-heading {
+    justify-content: center;
+  }
+  .footer-page-div .gym-name-text {
+    font-size: 1.2rem;
+    line-height: normal;
+  }
+}
